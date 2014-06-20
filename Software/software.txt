@@ -1,0 +1,2 @@
+Files related to software for the project.
+eg. games, graphics driver/library, utilities

@@ -1,0 +1,2 @@
+Files related to firmware for the project.
+eg. Microcontroller firmware

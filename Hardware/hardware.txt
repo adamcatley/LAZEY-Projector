@@ -1,0 +1,2 @@
+Files related to hardware for the project.
+eg. schematics and baord designs
