@@ -63,17 +63,13 @@
 	#define  Current_Frame									BufferState[Current_Receiving_Buffer]
 	#define  Current_Receiving_Frame				BufferState[Current_Receiving_Buffer]
 /* Private variables ---------------------------------------------------------*/
-	volatile Buffer_TypeDef BufferState[2]; 											//Holds information about both frame buffers
+	volatile Buffer_TypeDef BufferState[2]; 						//Holds information about both frame buffers
 	volatile BUFFER_SELECT Current_Buffer;  						//Current frame being sent to DAC
 	volatile BUFFER_SELECT Current_Receiving_Buffer;		//Current frame being received from RPI
 	
 	volatile uint8_t* UART_Queue;
 	volatile uint8_t  UART_Queue_Length = 0;
 	volatile uint8_t 	TxBuffer[DAC_BUFFER_SIZE];
-	//Point_TypeDef* Buffer1[POINTS_PER_SEC];
-	//*Buffer1	= (Point_TypeDef*)0x68000000;
-	//volatile Point_TypeDef *Buffer1 = NULL;
-	//volatile Point_TypeDef* Buffer2[POINTS_PER_SEC] = 0x6804000;
 	
 /* Private function prototypes -----------------------------------------------*/
 
